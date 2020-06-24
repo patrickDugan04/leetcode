@@ -11,5 +11,4 @@ class Solution:
             if R==L:
                 d+=1
         return d
-
         
