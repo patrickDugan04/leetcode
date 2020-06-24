@@ -1,10 +1,7 @@
 import re
 def a(x):
-    s = re.split('a|i|o|u', x)
-    x=''
-    for i in s:
-        x += i
-    return x
+    return ''.join(re.split('a|i|e|o|u', x))
+    # sorry for the one liner but hey
 if __name__ == "__main__":
     o = "hihi hi"
     print(a(o))
