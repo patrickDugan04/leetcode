@@ -6,6 +6,6 @@ class Solution:
             try:
                 k = a[target - n]
                 return i, k
-            except:
+            except KeyError:
                 a[n] = i
             
