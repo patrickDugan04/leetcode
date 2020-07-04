@@ -7,8 +7,8 @@ class Node:
 
     def gval(self):
         print(self.val)
-
-class graph:
+#adjacency list, yay
+class Graph:
     def __init__ (self, size):
         self.l = [None]*(size+1)
     def add_edge (self, a, b, w): # from a to b time w
@@ -26,7 +26,7 @@ class graph:
 
 class Solution:
     def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:
-        aj = graph(N)
+        aj = Graph(N)
         shortest = [] #shortest times
         heap = [] #min heap
         shortest.append(0)
